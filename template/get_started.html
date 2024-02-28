@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'get_started.css' %}">
+    <title>Document</title>
+
+    <script>
+        // Function to validate input and allow only alphabetic characters
+        function validateInput() {
+            var inputElement = document.getElementById("limitedInput");
+            var inputValue = inputElement.value;
+
+            // Remove non-alphabetic characters using a regular expression
+            var sanitizedValue = inputValue.replace(/[^a-zA-Z]/g, '');
+
+            // Update the input value with only alphabetic characters
+            inputElement.value = sanitizedValue;
+        }
+    </script>
+</head>
+<body>
+    <header id="nav_header">
+        <img id= "img_logo" src="{% static 'assets/pic_logo.png'%}" alt="logo" >
+        <nav id="navbar">
+            <a href="#">About us</a>
+        </nav>
+    </header>
+    <!-- for all content -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center" id="app-name">
+                <h1><span style="color: #0aa085;">REC</span>OMEE</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center" id="app-description">
+                <p>Empowering your choices, we provide personalized <br>
+                    career recommendations based on your input, <br>
+                    guiding you towards your optimal professional pathway <br> 
+                    with expertise and precision.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center" id="app-input">
+                <form method = "post" action = "{% url 'get_started' %}" name="get_started_form">
+                    {% csrf_token %}
+                    <input type="text" name="username" placeholder="Enter your nickname..." id= "limitedInput" oninput="validateInput()" maxlength="25" required>
+                    <button type="submit">GET STARTED</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+#results_heading h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 46px;
+    color: #02295B;
+}
+
+#result_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#result_content p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background-color: #02295B;
+    margin: 0px;
+    padding: 0.5rem;
+    width: 7rem;
+    border-radius: 50px 0px 0px 50px;
+    
+}
+
+#result_content h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #02295B;
+    background-color: #F4F4F4;
+    margin: 0px;
+    padding: 0.5rem;
+    width: 30rem;
+    border-radius: 0px 50px 50px 0px;
+}

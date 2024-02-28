@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+body{
+    margin: 0px;
+}
+#nav_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+#img_logo {
+    height: 30px;
+    width: 40px;
+    margin: 21px;
+    margin-left: 3rem;
+}
+
+#navbar{
+    margin: 25px;
+}
+
+#navbar a {
+    text-decoration: none;
+    margin: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #02295B;
+}
+
+#navbar a:hover{
+    color: #0AA085;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#app-name h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 100px;
+    color: #02295B;
+    margin-top: 2rem;
+    animation: fadeIn 3s ;
+}
+
+#app-description p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    animation: fadeIn 5s ;
+}
+
+form{
+    animation: fadeIn 7s ;
+}
+#app-input input{
+    border: 1px solid #0AA085;
+    background-color: white;
+    padding: 10px;
+    padding-left:8px;
+    width: 18rem;
+    border-radius: 35px;
+    margin-top: 1rem;
+    color: #02295B;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#app-input input::placeholder{
+    color: #0AA085;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    padding-left: 8px;
+}
+
+#app-input button{
+    border: none;
+    background-color: #02295B;
+    border-radius: 35px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    
+}
+
+#app-input button:hover{
+    color: white;
+    background-color: #0aa085;
+}
+
+
